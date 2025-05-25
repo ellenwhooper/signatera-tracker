@@ -1,5 +1,7 @@
 
 # Signatera Tracker for Clinical Compliance
+![Power BI](https://img.shields.io/badge/built_with-Power%20BI-blue)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
 
 This project is a Power BI-driven reporting solution designed to track Signatera testing adherence using EMR data (e.g., Flatiron/OncoEMR) across gynecologic oncology care plans.
 
