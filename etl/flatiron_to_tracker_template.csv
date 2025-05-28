@@ -1,0 +1,81 @@
+Patient_Name,MRN,Event_Type,Expected_Date,Actual_Date,Draw_Status_Category,Patient_Y_Index,Regimen_Type,Cycle,Y_Index
+Jane Smith,1001,Signatera C1,2024-01-01,2024-01-01,Compliant,4,c,C1,4
+Jane Smith,1001,Signatera C3,2024-02-12,,Missing,4,d,C3,4
+Jane Smith,1001,Signatera C4,2024-03-04,,Missing,4,a,C4,4
+Jane Smith,1001,Post C6 Draw,2024-05-06,2024-05-06,Compliant,4,d,C6,4
+John Doe,1002,Signatera C1,2024-01-08,2024-01-10,Late,5,a,C1,5
+John Doe,1002,Signatera C3,2024-02-19,2024-02-26,Late,5,d,C3,5
+John Doe,1002,Signatera C4,2024-03-11,2024-03-11,Compliant,5,d,C4,5
+John Doe,1002,Post C6 Draw,2024-05-13,,Missing,5,d,C6,5
+Alice Johnson,1003,Signatera C1,2024-01-15,2024-01-15,Compliant,1,a,C1,1
+Alice Johnson,1003,Signatera C3,2024-02-26,2024-02-26,Compliant,1,b,C3,1
+Alice Johnson,1003,Signatera C4,2024-03-18,2024-03-18,Compliant,1,b,C4,1
+Alice Johnson,1003,Post C6 Draw,2024-05-20,2024-05-20,Compliant,1,b,C6,1
+Mark Lee,1004,Signatera C1,2024-01-22,2024-01-24,Late,6,d,C1,6
+Mark Lee,1004,Signatera C3,2024-03-04,,Missing,6,d,C3,6
+Mark Lee,1004,Signatera C4,2024-03-25,2024-03-25,Compliant,6,d,C4,6
+Mark Lee,1004,Post C6 Draw,2024-05-27,,Missing,6,c,C6,6
+Rachel Kim,1005,Signatera C1,2024-02-01,2024-02-01,Compliant,8,c,C1,8
+Rachel Kim,1005,Signatera C3,2024-03-14,2024-03-14,Compliant,8,c,C3,8
+Rachel Kim,1005,Signatera C4,2024-04-04,,Missing,8,c,C4,8
+Rachel Kim,1005,Post C6 Draw,2024-06-06,2024-06-06,Compliant,8,b,C6,8
+David Wang,1006,Signatera C1,2024-02-10,2024-02-12,Late,3,c,C1,3
+David Wang,1006,Signatera C3,2024-03-23,2024-03-30,Late,3,a,C3,3
+David Wang,1006,Signatera C4,2024-04-13,2024-04-13,Compliant,3,d,C4,3
+David Wang,1006,Post C6 Draw,2024-06-15,,Missing,3,c,C6,3
+Nina Patel,1007,Signatera C1,2024-02-17,2024-02-17,Compliant,7,b,C1,7
+Nina Patel,1007,Signatera C3,2024-03-30,,Missing,7,a,C3,7
+Nina Patel,1007,Signatera C4,2024-04-20,2024-04-20,Compliant,7,b,C4,7
+Nina Patel,1007,Post C6 Draw,2024-06-22,2024-06-22,Compliant,7,c,C6,7
+Chris Evans,1008,Signatera C1,2024-02-24,2024-02-26,Late,2,c,C1,2
+Chris Evans,1008,Signatera C3,2024-04-06,2024-04-13,Late,2,b,C3,2
+Chris Evans,1008,Signatera C4,2024-04-27,2024-04-27,Compliant,2,a,C4,2
+Chris Evans,1008,Post C6 Draw,2024-06-29,,Missing,2,a,C6,2
+Jane Smith,1001,C1 Treatment,,2024-01-01,Treatment,4,a,C1,4
+Jane Smith,1001,C2 Treatment,,2024-01-22,Treatment,4,b,C2,4
+Jane Smith,1001,C3 Treatment,,2024-02-12,Treatment,4,d,C3,4
+Jane Smith,1001,C4 Treatment,,2024-03-04,Treatment,4,a,C4,4
+Jane Smith,1001,C5 Treatment,,2024-03-25,Treatment,4,d,C5,4
+Jane Smith,1001,C6 Treatment,,2024-04-15,Treatment,4,b,C6,4
+John Doe,1002,C1 Treatment,,2024-01-08,Treatment,5,d,C1,5
+John Doe,1002,C2 Treatment,,2024-01-29,Treatment,5,d,C2,5
+John Doe,1002,C3 Treatment,,2024-02-19,Treatment,5,d,C3,5
+John Doe,1002,C4 Treatment,,2024-03-11,Treatment,5,d,C4,5
+John Doe,1002,C5 Treatment,,2024-04-01,Treatment,5,a,C5,5
+John Doe,1002,C6 Treatment,,2024-04-22,Treatment,5,a,C6,5
+Alice Johnson,1003,C1 Treatment,,2024-01-15,Treatment,1,c,C1,1
+Alice Johnson,1003,C2 Treatment,,2024-02-05,Treatment,1,c,C2,1
+Alice Johnson,1003,C3 Treatment,,2024-02-26,Treatment,1,c,C3,1
+Alice Johnson,1003,C4 Treatment,,2024-03-18,Treatment,1,c,C4,1
+Alice Johnson,1003,C5 Treatment,,2024-04-08,Treatment,1,a,C5,1
+Alice Johnson,1003,C6 Treatment,,2024-04-29,Treatment,1,d,C6,1
+Mark Lee,1004,C1 Treatment,,2024-01-22,Treatment,6,a,C1,6
+Mark Lee,1004,C2 Treatment,,2024-02-12,Treatment,6,a,C2,6
+Mark Lee,1004,C3 Treatment,,2024-03-04,Treatment,6,b,C3,6
+Mark Lee,1004,C4 Treatment,,2024-03-25,Treatment,6,c,C4,6
+Mark Lee,1004,C5 Treatment,,2024-04-15,Treatment,6,b,C5,6
+Mark Lee,1004,C6 Treatment,,2024-05-06,Treatment,6,d,C6,6
+Rachel Kim,1005,C1 Treatment,,2024-02-01,Treatment,8,d,C1,8
+Rachel Kim,1005,C2 Treatment,,2024-02-22,Treatment,8,d,C2,8
+Rachel Kim,1005,C3 Treatment,,2024-03-14,Treatment,8,b,C3,8
+Rachel Kim,1005,C4 Treatment,,2024-04-04,Treatment,8,d,C4,8
+Rachel Kim,1005,C5 Treatment,,2024-04-25,Treatment,8,d,C5,8
+Rachel Kim,1005,C6 Treatment,,2024-05-16,Treatment,8,b,C6,8
+David Wang,1006,C1 Treatment,,2024-02-10,Treatment,3,d,C1,3
+David Wang,1006,C2 Treatment,,2024-03-02,Treatment,3,d,C2,3
+David Wang,1006,C3 Treatment,,2024-03-23,Treatment,3,b,C3,3
+David Wang,1006,C4 Treatment,,2024-04-13,Treatment,3,b,C4,3
+David Wang,1006,C5 Treatment,,2024-05-04,Treatment,3,b,C5,3
+David Wang,1006,C6 Treatment,,2024-05-25,Treatment,3,a,C6,3
+Nina Patel,1007,C1 Treatment,,2024-02-17,Treatment,7,b,C1,7
+Nina Patel,1007,C2 Treatment,,2024-03-09,Treatment,7,b,C2,7
+Nina Patel,1007,C3 Treatment,,2024-03-30,Treatment,7,c,C3,7
+Nina Patel,1007,C4 Treatment,,2024-04-20,Treatment,7,a,C4,7
+Nina Patel,1007,C5 Treatment,,2024-05-11,Treatment,7,b,C5,7
+Nina Patel,1007,C6 Treatment,,2024-06-01,Treatment,7,d,C6,7
+Chris Evans,1008,C1 Treatment,,2024-02-24,Treatment,2,c,C1,2
+Chris Evans,1008,C2 Treatment,,2024-03-16,Treatment,2,d,C2,2
+Chris Evans,1008,C3 Treatment,,2024-04-06,Treatment,2,a,C3,2
+Chris Evans,1008,C4 Treatment,,2024-04-27,Treatment,2,a,C4,2
+Chris Evans,1008,C5 Treatment,,2024-05-18,Treatment,2,b,C5,2
+Chris Evans,1008,C6 Treatment,,2024-06-08,Treatment,2,d,C6,2

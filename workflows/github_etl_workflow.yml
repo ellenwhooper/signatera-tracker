@@ -1,0 +1,33 @@
+
+name: Daily ETL Pipeline
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # Runs daily at 2 AM UTC
+  workflow_dispatch:
+
+jobs:
+  run-etl:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install pandas openpyxl
+
+    - name: Run ETL Script
+      run: python etl/etl_signatera.py
+
+    - name: Commit Output
+      run: |
+        git config user.name "GitHub Action"
+        git config user.email "action@github.com"
+        git add data/Signatera_Tracker_Input_FINAL.xlsx
+        git commit -m "Daily ETL output update"
+        git push
