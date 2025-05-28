@@ -20,3 +20,5 @@ def transform_flatiron_export(input_file, output_file):
 
 # Example usage
 # transform_flatiron_export('Signatera_Timeline_Expected_Actual_With_Cycles.xlsx', 'flatiron_to_tracker_template.csv')
+print("ETL completed successfully.")
+input("Press Enter to exit...")
