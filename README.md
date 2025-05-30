@@ -1,40 +1,71 @@
+# Signatera Tracker – MRD Compliance & Visualization Tool
 
-# Signatera Tracker for Clinical Compliance
-![Power BI](https://img.shields.io/badge/built_with-Power%20BI-blue)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
+## 🧬 Overview
 
-This project is a Power BI-driven reporting solution designed to track Signatera testing adherence using EMR data (e.g., Flatiron/OncoEMR) across gynecologic oncology care plans.
+This repository contains a complete, scalable solution for tracking Signatera draw compliance within oncology treatment plans. It is built to support:
 
-## Features
+- Flatiron EMR exports
+- Signatera MRD draw schedules
+- Compliance tracking for each patient (On-Time, Late, Missing)
+- Integration with Power BI for timeline/scatter plots
+- Future-ready support for MRD result decision support
 
-- Tracks Signatera draws by patient MRN, regimen, and treatment cycle
-- Calculates expected draw timing (C1, C3, C4, and 3 weeks post-C6)
-- Flags missed, overdue, or non-compliant draws
-- Supports both clinical care and retrospective research review
-- Can be published to Power BI Service for mobile access
+---
 
-## Files
+## 📁 Folder Structure
 
-- `Signatera_PowerBI_Dashboard_FINAL.xlsx`: Core dataset for visualizations
-- `Signatera_PowerBI_Walkthrough.pdf`: Step-by-step build guide
-- `push_to_github.bat`: Optional script to push local changes to GitHub
+```
+signatera-tracker/
+│
+├── /docs/                          # Stakeholder and IT-facing guides
+│   ├── Signatera_Tracker_Stakeholder_Deck.pdf
+│   ├── PowerBI_Step_By_Step_Guide.pdf
+│   ├── Setup_Guide_for_IT.pdf
+│   └── Signatera_MRD_UseCase_Dashboard.pdf
+│
+├── /data/                          # Sample input files
+│   ├── Signatera_Tracker_Input_FINAL.xlsx
+│   └── Signatera_MRD_Tracker_Template.xlsx
+│
+├── /dashboard/                    # Power BI report
+│   └── Signatera_Tracker.pbix
+│
+├── /etl/                          # ETL and transformation scripts
+│   ├── etl_signatera.py
+│   └── flatiron_to_tracker_template.csv
+│
+├── /automation/                   # Scripts for scheduling and GitHub Actions
+│   ├── run_etl_task.bat
+│   ├── github_push_script.bat
+│   └── Signatera_Dashboard_Refresh.yaml
+│
+├── README.md
+├── .gitignore
+└── LICENSE
+```
 
-## Getting Started
+---
 
-1. Clone this repo using GitHub Desktop or `git clone`.
-2. Open Power BI Desktop and load the provided Excel file.
-3. Build visuals using fields like:
-   - `Draw_Status_Category`
-   - `Draw_Overdue`
-   - `Days_Until_Draw`
-4. Add filters for diagnosis, timepoint, and action needed.
-5. Publish to Power BI Service to view on mobile devices.
+## ⚙️ How to Use
 
-## Credits
+### 1. Run the ETL Script
+```bash
+python etl/etl_signatera.py
+```
 
-Created by Ellen Hooper  
-Power BI and workflow support by OpenAI
+This will read your Excel file (e.g., `Signatera_Timeline_Expected_Actual_With_Cycles.xlsx`) and output a clean CSV ready for Power BI.
 
-## License
+### 2. Open Power BI
+Open the file `dashboard/Signatera_Tracker.pbix` and click **Refresh** to load the latest compliance and draw data.
 
-This project is open for collaboration under a custom clinical data use agreement. Contact Ellen for access or integration support.
+---
+
+## 🔒 Automation
+- Windows Task Scheduler can run `run_etl_task.bat` on a schedule
+- GitHub Actions are enabled via `Signatera_Dashboard_Refresh.yaml`
+
+---
+
+## 📬 Contact
+Questions or feedback? Please contact:
+**Ellen Hooper** – ehooper@natera.com
